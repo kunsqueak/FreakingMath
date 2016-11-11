@@ -132,7 +132,7 @@ int FreakingMath::fakeresult(int kq)
     int b=kq+3;
     while(kqgia==kq || kqgia<0)
     {
-        kqgia=a+rand()%(b-a+1);
+        kqgia=(a+rand()%(b-a+1));
     }
     return kqgia;
 }
@@ -149,17 +149,17 @@ void FreakingMath::createMath()
     }
     else if(tt=="-")
     {
-        if(th2>th1)
+        while(th2>th1)
         {
             int temp;
             temp=th2;
             th1=temp;
             th2=th1;
         }
-        else kqthuc=th1-th2;
         kqthuc=th1-th2;
     }
     kqgia=fakeresult(kqthuc);
+
 }
 void FreakingMath::drawMath(QPainter &painter)
 {
