@@ -22,8 +22,8 @@ private:
     int timerId;
     int th1;
     int th2;
-    int kqthuc;
-    int kqgia;
+    double kqthuc;
+    double kqgia;
     int random(int );
     int sosanh;
     int timeleft;
