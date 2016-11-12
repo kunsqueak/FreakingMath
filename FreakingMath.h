@@ -16,12 +16,14 @@ public:
     int diemso;
     int mode=0;
 private:
-    static const int DELAY = 30;
+    static const int DELAY = 10;
     static const int TIME_LEFT = 600;
+    int RAND_INC;
+    QColor background;
     bool mathIsTrue;
     int timerId;
-    int th1;
-    int th2;
+    double th1;
+    double th2;
     double kqthuc;
     double kqgia;
     int random(int );
@@ -30,7 +32,7 @@ private:
     int trangthaipheptoan;
     int toanhang1();
     int toanhang2();
-    int fakeresult(int);
+    int createkqgia(int);
     QString tt;
     QString toantu();
     QPointF truebtn;
